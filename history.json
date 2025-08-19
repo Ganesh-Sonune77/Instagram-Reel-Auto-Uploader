@@ -1,0 +1,107 @@
+[
+  {
+    "time": "2025-08-02T11:42:37.243971",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: FileNotFoundError: Caption missing: Video by ganesh.sonune.777363.txt"
+  },
+  {
+    "time": "2025-08-02T11:45:55.134413",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: FileNotFoundError: Caption missing: Video by ganesh.sonune.777363.txt"
+  },
+  {
+    "time": "2025-08-02T11:54:25.159226",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T11:57:15.867289",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T12:18:32.214443",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T12:32:07.407109",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: FileNotFoundError: Caption missing: reels\\Video by ganesh.sonune.777363.txt"
+  },
+  {
+    "time": "2025-08-02T12:41:28.255097",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T13:12:26.569949",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T13:26:09.817808",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T14:04:20.621984",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "\ud83d\udd25 Failed: TypeError: UploadVideoMixin.video_upload() got an unexpected keyword argument 'progress_callback'"
+  },
+  {
+    "time": "2025-08-02T14:12:40.187844",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "\ud83d\udd25 Failed: TypeError: UploadVideoMixin.video_upload() got an unexpected keyword argument 'progress_callback'"
+  },
+  {
+    "time": "2025-08-02T14:26:01.052306",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "\ud83d\udd25 Failed: TypeError: UploadVideoMixin.video_upload() got an unexpected keyword argument 'progress_callback'"
+  },
+  {
+    "time": "2025-08-02T14:31:57.978042",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "\ud83d\udd25 Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T14:32:48.483370",
+    "reel": "Video by taken_tips.mp4",
+    "status": "\ud83d\udd25 Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T14:42:16.181216",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "\ud83d\udd25 Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T14:43:17.106199",
+    "reel": "Video by taken_tips.mp4",
+    "status": "\ud83d\udd25 Failed: Exception: Please install moviepy>=1.0.3 and retry"
+  },
+  {
+    "time": "2025-08-02T14:53:51.956376",
+    "reel": "Video by ganesh.sonune.777363.mp4",
+    "status": "\u2705 Success"
+  },
+  {
+    "time": "2025-08-02T14:54:55.052514",
+    "reel": "Video by taken_tips.mp4",
+    "status": "\u2705 Success"
+  },
+  {
+    "time": "2025-08-04T17:41:43.157299",
+    "reel": "reel1.mp4",
+    "status": "\u2705 Success"
+  },
+  {
+    "time": "2025-08-04T17:42:53.238048",
+    "reel": "reel2.mp4",
+    "status": "\u2705 Success"
+  },
+  {
+    "time": "2025-08-04T17:43:52.348215",
+    "reel": "reel3.mp4",
+    "status": "\u2705 Success"
+  }
+]

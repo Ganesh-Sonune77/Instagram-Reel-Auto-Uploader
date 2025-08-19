@@ -1,0 +1,8 @@
+Flask==2.3.3
+instagrapi==1.18.5
+apscheduler==3.10.4
+gunicorn==21.2.0         # For production deployment if needed
+python-dotenv==1.0.1     # (Optional) Env vars for credentials
+tailwind
+uploader
+Pillow>=8.1.1

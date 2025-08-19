@@ -1,0 +1,65 @@
+<!-- templates/layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Reels Scheduler{% endblock %}</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-B7ze5GCbUTK1h+0hlXUalelsQJtL1HVDVKq1XtkxY1pUNqTIAJk0EYQv9y6yI4wQNL/hbABXQZKc4f/f3yrOOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <nav class="bg-white shadow-md py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-bold text-indigo-600">Reels Scheduler</a>
+      {% if session.username %}
+      <div class="space-x-4">
+        <a href="/status" class="text-gray-600 hover:text-indigo-600">Status</a>
+        <a href="/pause" class="text-gray-600 hover:text-indigo-600">Pause</a>
+        <a href="/resume" class="text-gray-600 hover:text-indigo-600">Resume</a>
+      </div>
+      {% endif %}
+    </div>
+  </nav>
+  <main class="flex-grow container mx-auto px-4 py-8">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="bg-white shadow-inner py-4">
+    <div class="container mx-auto text-center text-gray-500">
+      &copy; {{ current_year }} Insta Tools
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+<!-- templates/status.html -->
+{% extends "layout.html" %}
+{% block title %}Upload Status - Reels Scheduler{% endblock %}
+{% block content %}
+<div class="max-w-2xl mx-auto animate__animated animate__zoomIn">
+  <h2 class="text-2xl font-semibold mb-4">Recent Uploads</h2>
+  <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
+    <thead class="bg-indigo-600 text-white">
+      <tr>
+        <th class="py-2 px-4">Time</th>
+        <th class="py-2 px-4">Reel</th>
+        <th class="py-2 px-4">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in history %}
+      <tr class="border-b hover:bg-gray-50">
+        <td class="py-2 px-4 text-gray-700">{{ entry.time.split('T')[0] }} {{ entry.time.split('T')[1][:8] }}</td>
+        <td class="py-2 px-4 text-gray-700">{{ entry.reel }}</td>
+        <td class="py-2 px-4 font-medium text-{{ 'green' if 'Success' in entry.status else 'red' }}-600">{{ entry.status }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,118 @@
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 0.5rem 0 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+
+  input:focus,
+  select:focus {
+    border-color: #6366f1;
+    outline: none;
+  }
+
+  button {
+    display: inline-block;
+    background: #6366f1;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+
+  button:hover {
+    background: #4f46e5;
+  }
+
+  #upload-info {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  #progress-bar {
+    transition: width 0.5s ease-in-out;
+    border-radius: 6px;
+  }
+
+  a, button#resume-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+  }
+
+  a:hover, button#resume-btn:hover {
+    background: #059669;
+  }
+
+  button#resume-btn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
